@@ -12,6 +12,10 @@ func (h *Handler) CreateTaskHandler(c *gin.Context) {
 
 }
 
+func (h *Handler) ReadTaskHandler(c *gin.Context) {
+
+}
+
 func (h *Handler) OwnTaskHandler(c *gin.Context) {
 
 }
@@ -24,7 +28,7 @@ func (h *Handler) FinishTheTask(c *gin.Context) {
 
 }
 
-func (h *Handler) AproveFinishingTask(c *gin.Context) {
+func (h *Handler) ApproveFinishingTask(c *gin.Context) {
 
 }
 
