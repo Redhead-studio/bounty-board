@@ -9,7 +9,7 @@ type Bounty struct {
 	ExecutorID  *int                   `gorm:"index"`
 	Title       string                 `gorm:"size:128;not null"`
 	Description string                 `gorm:"type:text;not null"`
-	Reward      int                    `gorm:"not null"`
+	Reward      int                    `gorm:"not null;check:chk_bounties_reward_positive,reward > 0"`
 	Status      constants.BountyStatus `gorm:"size:32;not null;default:open"`
 
 	Room        Room         `gorm:"foreignKey:RoomID"`
